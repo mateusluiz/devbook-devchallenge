@@ -1,6 +1,6 @@
 const cards = document.querySelector('.cards')
 
-barraDeRolagem()
+// barraDeRolagem()
 barraDePesquisa('search')
 barraDePesquisa('meio-search')
 
@@ -45,15 +45,11 @@ async function barraDePesquisa(tipoPesquisa) {
   
   botao.addEventListener('click', async (e) => {
 
-    const searchTopo = document.getElementById('pesquisa-topo').value
-    const searchMeio = document.getElementById('pesquisa-meio').value
-    const seVazio = searchTopo === '' || searchMeio === '' 
+    const searchTopo = document.getElementById("pesquisa-topo").value.length > 1
+    const searchMeio = document.getElementById("pesquisa-meio").value.length > 1
 
-    if(seVazio) {
-      alert('Informe um nome na pesquisa')
-
-    } else {
-    
+    console.log(searchTopo, searchMeio)
+    if(searchTopo || searchMeio) {
       document.querySelector('.cabecalho').classList.add('pesquisa-on')
       document.querySelector('.container-meio').classList.add('pesquisa-on')
       document.querySelector('.pesquisa').classList.remove('off')
@@ -91,6 +87,8 @@ async function barraDePesquisa(tipoPesquisa) {
         `
       }).join('')
 
+    } else {
+        alert('Informe um nome na pesquisa')
     }
 
   })
