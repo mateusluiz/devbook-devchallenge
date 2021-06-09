@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Titulo</title>
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="logo">
+      <a href="/"><span class="dev">dev</span><span class="book">Book</span></a>
+    </div>
+    <div class="search">
+      <input type="search" name="pesquisa" id="pesquisa-topo" placeholder="Pesquise pelo nome de usuário">
+      <img src="./assets/search-button.svg" alt="Pesquisar">
+    </div>
+  </header>
+  
+  <main class="container-meio">
+    <div class="cor">
+      <div class="meio-um">
+        <div class="meio-esquerda">
+          <h1>Stalk people on github!</h1>
+          <div class="meio-search">
+            <input type="search" name="pesquisa" id="pesquisa-meio" placeholder="Pesquise pelo nome de usuário">
+            <img src="./assets/search-button-square.svg" alt="Pesquisar">
+          </div>
+        </div>
+        <img id="cat" src="./assets/octocat.png" alt="octocat">
+      </div>
+    </div>
+    <div class="meio-dois">
+      <div class="top-users">
+        <h1>Top users</h1>
+        <div class="cards">
+          <div class="card-loading">
+            <img src="./assets/card-loading.gif" alt="">
+          </div>
+
+          <div class="card-loading">
+            <img src="./assets/card-loading.gif" alt="">
+          </div>
+
+          <div class="card-loading">
+            <img src="./assets/card-loading.gif" alt="">
+          </div>
+
+          <div class="card-loading">
+            <img src="./assets/card-loading.gif" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="pesquisa off">
+    <h1>Results for <span class="nome-pesquisado">Name</span></h1>
+    <div class="resultados">
+      <div class="card-loading">
+        <img src="./assets/card-loading.gif" alt="">
+      </div>
+
+      <div class="card-loading">
+        <img src="./assets/card-loading.gif" alt="">
+      </div>
+
+      <div class="card-loading">
+        <img src="./assets/card-loading.gif" alt="">
+      </div>
+
+      <div class="card-loading">
+        <img src="./assets/card-loading.gif" alt="">
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="index.js"></script>
+
+</body>
+</html>
