@@ -1,6 +1,6 @@
 const cards = document.querySelector('.cards')
 
-// barraDeRolagem()
+barraDeRolagem()
 barraDePesquisa('search')
 barraDePesquisa('meio-search')
 
